@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "72e66781431eb2a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a78f27c21b534f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc9e334525408746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phase1_기본환경설정_도구설치.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Phase1_기본환경설정_도구설치"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bad6828a17330c4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "812208a237e245c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e19c2224f6ab4e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "393dc96d55516a53",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a7b6bd23be404bc6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ddf464833a4decea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b4f25fd8fa138013",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd7971e46a55d82b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffcd2f3362aa74d2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Phase1_기본환경설정_도구설치.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Phase1_기본환경설정_도구설치 의 백링크"
+            }
+          },
+          {
+            "id": "f60cf9ba45446e2c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "퇴직준비세미나.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "퇴직준비세미나 의 나가는 링크"
+            }
+          },
+          {
+            "id": "b9685adc276e95e9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "c322222d331ca489",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "퇴직준비세미나.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "퇴직준비세미나 의 개요"
+            }
+          }
+        ]
+      },
+      {
+        "id": "19ace2bebbfaf35f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "788750605f9afaa7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "fc9e334525408746",
+  "lastOpenFiles": [
+    "desktop.ini",
+    "퇴직준비세미나_Phase1_사전과제_공지.md",
+    "퇴직준비세미나.md",
+    "Phase1_기본환경설정_도구설치.md",
+    "환영합니다!.md"
+  ]
+}
