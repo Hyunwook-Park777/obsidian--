@@ -1,8 +1,5 @@
 # Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/plugins/
-.obsidian/community-plugins.json
+.obsidian/
 .trash/
 
 # System files
