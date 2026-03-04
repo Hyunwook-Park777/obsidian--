@@ -1,3 +1,13 @@
+# 모든 파일/폴더를 기본적으로 무시
+/*
+
+# 퇴직준비세미나 폴더만 추적
+!/퇴직준비세미나/
+
+# 프로젝트 설정 파일
+!/.gitignore
+!/CLAUDE.md
+
 # Obsidian
 .obsidian/
 .trash/
