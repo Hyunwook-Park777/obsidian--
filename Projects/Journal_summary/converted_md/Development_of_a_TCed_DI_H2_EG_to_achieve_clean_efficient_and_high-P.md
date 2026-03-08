@@ -1,0 +1,787 @@
+# Development of a TCed DI H2 EG to achieve clean, efficient, and high-P
+
+Fuel 324 (2022) 124713
+
+Available online 1 June 2022
+
+0016-2361/© 2022 Elsevier Ltd. All rights reserved.
+
+Full Length Article
+
+Development of a turbocharged direct-injection hydrogen engine to achieve
+
+clean, efficient, and high-power performance
+
+Ling-zhi Bao a
+, Bai-gang Sun a
+, Qing-he Luo a,*
+
+, Jin-cheng Li b,*
+, Ding-chao Qian b
+, He-yang Ma b
+,
+Ying-jun Guo b
+
+a School of Mechanical Engineering, Beijing Institute of Technology, Beijing 100081, China
+
+b General Research and Development Institute, China First Auto Works Corporation Limited, Changchun 130013, China
+
+ARTICLE INFO
+
+Keywords:
+
+Direct-injection hydrogen engine
+Turbocharged
+
+High thermal efficiency
+NOx emissions control
+
+ABSTRACT
+
+Hydrogen, as clean and renewable energy, is an ideal fuel for internal combustion engines. The direct-injection
+(DI) hydrogen engine can offer large power with low cost and rely less on hydrogen purity. In this study, a 2.0L
+DI turbocharged hydrogen engine is implemented to achieve clean, efficient, and high-power performance. Peak
+power of 120 kW @ 4400 rpm and a maximum torque of 340 N⋅m @ 2000 rpm can be achieved with the matched
+turbocharger. Appropriate retarded injection can suppress abnormal combustion and broaden the dynamic
+boundaries. A maximum brake thermal efficiency (BTE) of 42.6% is obtained with the slightly lean excess air
+coefficient (λ) of 1.91 @ 2000 rpm and 40.4% BTE with the λ of 2.47 @ 3000 rpm. The high conversion efficiency
+of NOx emissions of over 99.5% is reached at low speeds (below 2000 rpm) and drops to 90% at 4400 rpm with
+the use of the NH3-SCR after-treatment system. The NOx emissions of approximately two-thirds of the whole
+working conditions can be reduced below 20 ppm. The optimized DI hydrogen engine can achieve large power
+(Brake mean effective pressure = 17 bar), high efficiency (Brake thermal efficiency = 42.1%), and near-zero
+emissions (NOx < 20 ppm) simultaneously.
+
+1. Introduction
+
+Global warming and climate change are two of the main drivers for
+the development of sustainable and renewable transportation solutions.
+In recent decades, several governments have committed to achieving
+peak carbon dioxide emissions and carbon neutrality. As a result, lowcarbon
+or carbon-free energy must be implemented. Hydrogen, as
+clean and renewable energy, is regarded as an important component of
+the energy structure in the future [1]. Currently, there are two techniques
+for vehicle application: the first is hydrogen fuel cells, with zero
+emissions and high efficiency. The second alternative is the hydrogen
+internal combustion engine. It can make use of existing established industries
+with low cost and high reliability, relying less on the purity of
+hydrogen fuel [2].
+
+The high heat value, large octane number, and wide flame limits
+prove that hydrogen is regarded as an ideal fuel for the internal combustion
+engine [3]. The low ignition energy and high autoignition
+temperature of hydrogen indicate that it is suitable to be spark ignited.
+According to the mixture formation types, the hydrogen engines can be
+
+divided into port fuel injection (PFI) and direct injection (DI) hydrogen
+engines [4]. In terms of the PFI, the hydrogen takes up approximately
+30% of the cylinder volume when mixing with air in the intake stroke at
+a stoichiometric ratio due to the ultra-low density of the hydrogen [5].
+Thus, about 30% of the power is lost with PFI, while the DI hydrogen
+engines solve this problem. The mixture calorific value of the DI
+hydrogen engine reaches 4.5 MJ/m3
+, providing 17% more power than
+the gasoline engine(3.9 MJ/m3
+) with the same displacement in the
+
+theoretical analysis [6]. As demonstrated in Fig. 1 [7], DI turbocharged
+hydrogen engine is superior in power and torque density compared to
+other fuels.
+
+Despite the strong performance of the power, the high flame speeds
+and the wide flame range of hydrogen lead to high combustion efficiency
+and low pumping loss [8]. Therefore, hydrogen engines can
+achieve higher thermal efficiency compared to other fuels. NOx emissions
+are considered the major pollutants from the hydrogen engine and
+can reach zero emissions with lean combustion [9]. However, there
+exists a trade-off relationship between the three parameters of NOx
+emissions, thermal efficiency, and power. Reducing the NOx emissions
+affects the thermal efficiency and sacrifices the power performance
+
+* Corresponding authors.
+
+E-mail addresses: luoqinghe@bit.edu.cn (Q.-h. Luo), lijincheng@faw.com.cn (J.-c. Li).
+
+Contents lists available at ScienceDirect
+
+Fuel
+
+journal homepage: www.elsevier.com/locate/fuel
+
+https://doi.org/10.1016/j.fuel.2022.124713
+
+Received 11 April 2022; Received in revised form 23 May 2022; Accepted 27 May 2022
+Fuel 324 (2022) 124713
+
+2
+
+inevitably [10].
+
+A series of technological methods have been applied to balance the
+trade-off relationship and find the performance boundaries of the DI
+hydrogen engine. First, adjusting the injection strategy can optimize the
+mixing process in the cycle, resulting in high combustion efficiency.
+Wimmer et al. found that when the timing of the start of injection (SOI)
+was delayed from 120◦CA BTDC to 65◦CA BTDC, the distribution of the
+mixture in the cylinder was stratified, forming a local area of rich concentration,
+accelerating the propagation of flame and shortening the
+duration of combustion [11]. Meanwhile, hydrogen was injected at the
+end of compression, the compression work decreased and the overall
+efficiency increases by 3%. Verhelst et al. discovered that the stratified
+combustion of hydrogen can form a slightly rich mixture near the spark
+plug, ensuring stable flame development and propagation; while the
+leaner mixture is clustered near the wall surface to reduce heat transfer
+loss and achieve efficient combustion [12]. Second, intake boosting is an
+effective method of enhancing power and efficiency performance. Tsujimura
+et al. found when applying the intake boost pressure of 175 kPa
+and an exhaust gas recirculation rate of roughly 50% on a 1.3L supercharged
+hydrogen engine, a maximum indicate mean effective pressure
+(IMEP) of 1.46 MPa (135 N⋅m@1000 rpm) was achieved with engineout
+NOx emissions of <150 ppm (NOx < 0.55 g/kW) [13]. Oikawa
+et al. reported that near zero emissions were reached and the indicated
+thermal efficiency was approaching 50% with 9 bar IMEP @1000 rpm
+based on the 100 kPa supercharge pressure [14]. The high thermal efficiency
+of 50% and low NOx emissions were owing to the new
+
+combustion process called the plume ignition combustion concept [15].
+The peak brake thermal efficiency of the DI hydrogen engine can reach
+45.1 % according to the simulation by Klepatz et al. [16]. Shiro Tanno
+et al. have declared that the indicated thermal efficiency of 55 % and the
+brake thermal efficiency of 51 % were the future targets by applying
+high efficiency turbocharger, low penetration injection, and proper
+combustion chamber configuration, and Atkinson cycle [17]. Third, the
+NOx emissions after-treatment system plays an important role to
+maintain high engine performance while controlling the emissions.
+Kawamura proposed a two-stage combined system of NOx Storage/
+Reduction (NSR) and a Diesel Oxidation Catalyst (DOC), where unburned
+hydrogen is used to reduce NOx emissions in NSR. The DOC is
+responsible for oxidizing unreacted hydrogen and ammonia generated
+in the reduction process. Experimental results show that the NOx conversion
+efficiency can reach 98% and hydrogen consumption only increases
+by 0.2% to 0.5% [18]. Kufferath et al. tested the NH3-SCR system
+with lean combustion, the NOx conversion efficiency reached 90%. It is
+expected that the NOx emission of a DI hydrogen engine hybrid vehicle
+can be reduced to only 1 ~ 2 mg per kilometer [19].
+
+According to the articles reviewed above, the optimization of the
+engine performance mainly focuses on the specific working speeds and
+loads, with little consideration of the overall working characteristics.
+The working boundary and its limitations have not been clarified. Besides,
+the previous experiments are based on the naturally aspirated or
+supercharged method, with low and fixed intake pressure (below 200
+kPa). Compared to the supercharger with the high cost and requires
+extra driven power, a compact turbocharger can achieve higher thermal
+efficiency since it can recycle exhaust energy. However, the commercial
+turbochargers of the traditional gasoline and diesel engine are no longer
+suited for hydrogen engines. The matching process is difficult and will
+be discussed later. Moreover, when the turbine cannot absorb enough
+exhaust gas energy, the residual gas fraction increases and the combustion
+deteriorates, which increases the controlling challenge [20].
+
+In this study, a maximum intake pressure of 280 kPa was achieved
+with the reconfigured turbocharger. The effects of the turbocharger and
+the limitation of abnormal combustion on the output power are investigated
+in detail. Various methods, such as lean combustion and the
+Miller cycle, are tested to reach maximum thermal efficiency. An NH3-
+SCR after-treatment is applied to achieve near-zero emissions with
+efficient and high-power performance.
+
+2. Experimental set-up
+
+Experiments are implemented on a 2.0 L, four-stroke, direct injection
+hydrogen-fueled engine with 99.99% high purity hydrogen. The
+hydrogen engine is modified based on the original gasoline engine. The
+
+Nomenclature
+
+PFI port fuel injection
+DI direct injection
+
+SOI start of injection
+
+SCR selective catalytic reduction
+OC oxidation Catalyst
+
+ASC ammonia slip catalyst
+
+BMEP brake mean effective pressure
+BTE brake thermal efficiency
+
+IMEP indicate mean effective pressure
+ECU electric control unit
+IVO intake valve opens
+
+EVC exhaust valve closes
+
+λ excess air coefficient
+
+Fig. 1. Power and torque potentials of different engine concepts [7].
+
+Fig. 2. Sketch of the DI hydrogen engine. (1- First pressure reducing valve, 2-
+Secondary pressure reducing valve, 3- Hydrogen mass flow meter, 4- Exhaust
+gas analysis before the SCR after-treatment, 5-Injection system of the NH3, 6-
+Exhaust gas analysis after the SCR after-treatment).
+
+L.-z. Bao et al.
+Fuel 324 (2022) 124713
+
+3
+
+schematic diagram is described in Fig. 2, with the engine parameters
+shown in Table 1.
+
+As shown in Fig. 3, the direct-injection hydrogen injector was driven
+by the piezoelectric with 200 V voltage and a maximum current of 8 A.
+The hydrogen injector was placed on the intake side of the cylinder and a
+maximum flow rate of 2.66 mg/ms was achieved with the injection
+pressure of 14 MPa. The detailed spray characteristics of this wide-open
+direct-injection hydrogen injector were tested by Wang et al. [21]. A
+cover cap with a 2.6 mm × 0.5 mm rectangle hole was installed on the
+injector to gather the hydrogen jet and avoid the backflow during the
+injection. The injection duration was determined by the engine speeds,
+the hydrogen injection pressure, and the required mass flow according
+to the specific working conditions. The detailed injection durations were
+mainly clustered in the range of 3 ms to 10 ms.
+
+Table 2 summarizes the uncertainties in the measuring data based on
+the equipment specifications. The engine’s speed and torque were
+measured using a CW250 eddy current dynamometer. A two-stage
+pressure-reducing valve can adjust the hydrogen injection pressure
+from 4 MPa to 20 MPa depending on the working conditions. The cylinder
+pressure was measured using four Kistler cylinder pressure
+transducers 6052C, and the electric control unit (ECU) was based on the
+INCA system. Temperature (Pt100 and K type thermocouple), as well as
+the pressure of the intake and exhaust pipes, were all part of the data
+collection system.
+
+The mass flow of hydrogen was monitored by Emerson CMF010
+Coriolis mass flowmeters, and the mass flow of air was measured by a
+thermal mass flowmeter. The excess air coefficient (the reciprocal of the
+equivalence ratio) for each working condition is calculated by the
+measured mass flow of hydrogen and air in the test bench system. The
+NOx emission of the exhaust gases was measured by an AVL DiTEST GAS
+1000 using the electrochemical method. The after-treatment system
+consists of a 2.1 L oxidation catalyst (OC), a 5.79 L selective catalytic
+reduction (SCR), and an ammonia slip catalyst (ASC). The solid
+ammonia is stored in the tank and is injected into the front of the SCR
+after heating. A rapid SCR mechanism is applied to achieve a high
+conversion efficiency of over 95%.
+
+3. Results and discussion
+
+3.1. Enhancing the engine power
+
+3.1.1. Increasing the output power by turbocharging
+
+Intake boosting has become a common solution to increase the power
+density and improve the torque performance of the hydrogen engine. To
+investigate the effects of turbocharging, the engine works with the wideopen
+throttle to minimize the pumping loss. Hydrogen is supplied with a
+maximum safe working pressure of 14 MPa, ensuring sufficient injection
+duration at high engine speeds. The maximum power performance in
+experiments is mainly restricted by the limited flow rates of the
+hydrogen injector and the abnormal combustion, which will be discussed
+later. The tested results are shown in Fig. 3. The engine power
+rises smoothly, reaching its peak power of 51 kW with the naturally
+aspirated engine when the engine speed changes from 1000 rpm to 4500
+rpm. In contrast, after the simulation, calculation, and reconfiguration
+of the turbocharger, the power of the turbocharged engine increased by
+
+123%, reaching a maximum power of 120 kW @ 4400 rpm. The torque
+performance is shown in Fig. 4. In comparison to the 112 N⋅m @ 2000
+rpm with a naturally aspirated engine, the torque of the matched
+turbocharged engine increased by 195%, achieving a maximum torque
+of 340 N⋅m and a peak brake mean effective pressure (BMEP) of 21.2 bar
+at 2000 rpm. The high torque at low speeds can provide sufficient acceleration
+ability for the driven vehicle.
+
+In terms of the results of the original gasoline engine turbocharger,
+only a 54% power increase is achieved, since the challenge of turbocharger
+matching for the DI hydrogen engines stands out. On the one
+hand, a more powerful compressor with larger air mass flow rates and a
+higher-pressure ratio is demanded for the hydrogen engine compared to
+gasoline engine. Because the high stoichiometric air-to-fuel ratio (34.25)
+and the lean combustion of the hydrogen engine (λ often exceeding 2)
+lead to the large air flow mass. As demonstrated in Fig. 5, the practical
+working area of a hydrogen engine takes up approximately twice that of
+gasoline engines. The majority of the working points are located in the
+compressor’s high-efficiency region, and a maximum pressure ratio of
+2.85 is achieved with 73% compressor efficiency. A large air flow rate
+range that covers from 0.03 kg/s to 0.17 kg/s is required for the
+hydrogen engine when the engine speeds change from 1000 rpm to
+4500 rpm.
+
+On the other hand, considering the low exhaust gas temperature of
+approximately 550 ◦C achieved at 3000 rpm with the power of 91 kW
+and the BMEP of 18.2 bar, while the exhaust temperature of a gasoline
+engine reaches 900 ◦C at the same load and engine speeds. Therefore,
+less energy can be recycled by the turbo of the hydrogen engine. Hence,
+a small turbo with a short flow diameter is required to raise the
+expansion ratio and provide sufficient power to the coaxial compressor.
+As shown in Fig. 6, the reduction of the turbo flow section leads to an
+increase in the exhaust pressure, especially at high engine speeds. The
+exhaust pressure rises rapidly from 121 kPa, exceeds the intake pressure
+at 2000 rpm, and arrives at 371 kPa at 3000 rpm, which is 110 kPa
+higher than the intake pressure. The volumetric efficiency, which evaluates
+the quantity of the gases exchanged, can be calculated as follows.
+
+∅ =
+
+mair
+30n
+
+pintakeVM
+RTintake
+
+× 100% (1)
+
+where mair represents the air mass flow measured by the air flowmeters
+in the standard condition, kg/h; n represents the engine speeds, rpm;
+pintake represents the absolute intake pressure of the intake manifold,
+kPa; V represents the displacement of the engine, m3
+; M equals to the
+mole mass of the air of 28.9 g/mol; R is the molar gas constant; Tintake
+represents the temperature of the intake manifold, K.
+
+The volumetric efficiency varies with the change of the exhaust
+pressure and drops considerably from 97% to 78% at high speeds of
+4500 rpm. The deterioration of the charging process increases the residual
+gases in the cylinder, causing abnormal combustion such as preignition
+and backfire, limiting the power performance. Hence, the torque
+of the turbocharged hydrogen engine in Fig. 4 drops significantly
+when the engine speeds exceed 3000 rpm. Besides, it also demonstrates
+that a single turbocharger cannot meet the demands of the entire engine
+speed range. Separate turbochargers suited for different ranges of engine
+speeds, or an appropriate variable geometry turbocharger are required
+to provide high intake pressure with large volumetric efficiency at whole
+engine speed range in the future.
+
+3.1.2. Abnormal combustion limits
+
+Although the abnormal combustion of backfire can be avoided by
+retarding hydrogen injection after the intake valve closes, other
+abnormal combustion, such as the pre-ignition and the knock, still occurs
+under some specific working conditions. As shown in Fig. 7 (a), the
+injection pressure and engine speed are set at 14 MPa and 2000 rpm,
+respectively, while the timing of the start of injection (SOI) retards from
+− 180 ◦CA (the negative sign represents the crank angle before the
+
+Table 1
+
+Parameters of the 2.0 L turbocharged direct-injection hydrogen engine.
+Engine type Hydrogen engine
+Bore 82.5 mm
+Stroke 93 mm
+Cylinders 4
+
+Compression ratio 12.5:1
+
+Engine speed 1000 rpm ~ 4500 rpm
+Hydrogen injection pressure 6 MPa ~ 14 MPa
+
+L.-z. Bao et al.
+Fuel 324 (2022) 124713
+
+4
+
+combustion top dead center) to − 140 ◦CA. The ignition of the spark plug
+takes place at − 8 ◦CA. The average cylinder pressure of 200 normal
+cycle tests without pre-ignition rises smoothly after ignition, peaking at
+122 bar at 15 ◦CA. The pre-ignition happens during the NO.20 cycle of
+SOI = -180 ◦CA. The cylinder pressure increases drastically from
+− 25 ◦CA, premature to the spark timing, keeping fluctuation after
+reaching the maximum pressure of 182 bar at 2 ◦CA, accompanied by the
+sharp sound during the experiments. This phenomenon is induced by the
+hot spot in the cylinder due to the low ignition energy of hydrogen, and
+the mechanism is termed as the runway pre-ignition. The intense
+burning of the pre-ignition results in the rising of the cylinder temperature,
+causing the continuous generation of hot spots, triggering another
+pre-ignition at the NO.41cycle with an earlier start timing of − 30 ◦CA.
+The drastic pre-ignition also leads to the spontaneous combustion of the
+
+end mixture and a slight knock at the engine speed of 2000 rpm. Hence,
+the engine is forced to adjust the work conditions once the pre-ignition
+occurs, and the BMEP is limited to 15 bar with the SOI of-180 ◦CA. In
+
+Fig. 3. Direct-injection hydrogen injector and the configuration of the combustion chamber.
+
+Table 2
+
+Measuring equipment and data accuracy.
+
+Measuring Device Accuracy
+Engine speed GW250 dynamometer ±1 r/min
+Engine torque FC2000 Torque transducer ±1N⋅m
+
+Cylinder pressure Kistler 6052C transducer ±0.2 bar
+
+H2 mass flow CMF010 H2 flowmeters ±0.01 kg/h
+Air mass flow MTR-500 Air flowmeters ±2.5 kg/h
+NO emissions AVL DiTEST GAS 1000 ±3 ppm
+
+Fig. 4. Engine power performance with different intake types.
+
+Fig. 5. Engine torque performance with different intake types.
+
+Fig. 6. Compressor map and the working area of the hydrogen engine and
+gasoline engine.
+
+L.-z. Bao et al.
+Fuel 324 (2022) 124713
+
+5
+
+contrast, when the injection timing retards to − 160◦CA, the pre-ignition
+is alleviated. Because later injection leaves a long time for cooling before
+the injection, which inhibits the probability of the occurrence of preignition.
+However, pre-ignition also occurs with retarded injection
+when the engine works at high speeds with the same loads. As shown in
+Fig. 7(b), the pre-ignition cylinder pressure rises later at 3000 rpm,
+reaching a maximum of 171 bar without fluctuation. The increase of the
+turbulence intensity accelerates the flame speeds at 3000 rpm. The
+knock no longer occurs with the pre-ignition at high engine speeds.
+Considering the increase of the residual gases and the decrease of the
+mechanical efficiency, the cylinder pressure and temperature rise with
+the increase of the engine speed at the same loads. Thus, pre-ignition
+tends to take place at high engine speeds due to the high cylinder
+temperature.
+
+Another abnormal combustion phenomenon of knock is also detected
+at an engine speed of 2000 rpm. As illustrated in Fig. 8(a), after the SOI
+delays to − 140 ◦CA, the BMEP can be improved to 19.5 bar, breaking
+through the pre-ignition limitation and occurring knock. Unlike the preignition,
+the cylinder pressure of the knock increases sharply after the
+ignition, reaching a peak pressure of 187 bar, which is 22 bar larger than
+the peak of the normal cycle. The rising rate of the pressure of the knock
+is larger than the pressure of the pre-ignition and leads to a louder and
+more shrill noise, with a higher thermal load of the engine. The thermal
+shock from high pressure gases and the vibration of the engine leaves
+
+several pits and scratches on the cylinder wall and the head of the piston.
+As shown in Fig. 8 (b), the irreversible damage leads to a significant
+reduction in the working lifetime of the hydrogen engine. The effective
+method of prohibit knock is retarding ignition angle when the knock
+happens. However, the power and the thermal efficiency will decrease
+with delayed ignition.
+
+To validate the maximum power boundary and investigate the
+abnormal combustion characteristic, different injection timings with
+various engine speeds are tested in Fig. 9. The overall BMEP increases
+with the retardation of the injection. It is worth noting that pre-ignition
+
+Fig. 7. Intake exhaust pressure and volumetric efficiency at different engine
+speeds.
+
+Fig. 8. Cylinder pressure of the pre-ignition combustion.
+
+Fig. 9. Cylinder pressure of abnormal combustion and its harm.
+
+L.-z. Bao et al.
+Fuel 324 (2022) 124713
+
+6
+
+occurs at early injection timing (SOI = -180 ◦CA) and high engine speeds
+(>3000 rpm), whereas knock tends to happen with late injection (later
+than SOI = -160 ◦CA) and medium engine speeds. Apart from the
+adjustment of the injection timing, and reducing intake gas temperature
+after the intercooler, appropriate valve timing can also suppress
+abnormal combustion. Fig. 10. Fig. 11..
+
+3.2. Increasing the brake thermal efficiency
+
+A larger compression ratio of 12.5 compared to the original gasoline
+engine of 10.8 is the basis of achieving high brake thermal efficiency
+(exceeds 42%). Here, other methods such as lean combustion and the
+Miller cycle are investigated as follows.
+
+3.2.1. Effects of lean combustion
+
+As shown in Fig. 12, the working range of the excess air coefficient λ
+is confined between 1.7 and 3.8, considering the abnormal combustion
+with a rich ratio and the low operation stability with an ultra-lean ratio.
+The brake thermal efficiency (BTE) of both engine speeds rises first with
+the increase of the λ, keeps approximately constant when λ reaches 3,
+and drops significantly. While the BMEP shows a different tendency, it
+decreases rapidly with the λ changing from 1.7 to 2.9. Nevertheless, the
+range of BTE exceeds 40% overlaps with the area of BMEP > 8 bar, since
+the increase of the combustion efficiency and the turbocharger efficiency
+when the engine works at high loads. A maximum BTE of 42.6%
+can be obtained with λ of 1.91 @ 2000 rpm and a maximum BTE of
+40.4% with λ of 2.47 @ 3000 rpm. Hence, slightly lean combustion
+benefits the engine by improving its thermal efficiency.
+
+3.2.2. Effects of the Miller cycle
+
+The Miller cycle is an effective method for increasing thermal efficiency,
+as demonstrated by simulation in a turbocharged hydrogen engine
+[21]. As shown in Fig. 12, the negative sign represents the valve
+timing before the TDC. Both the intake and exhaust valves can be
+adjusted by 40 ◦CA. The highest BTE is located at the left bottom of the
+figure, where the intake valve opens (IVO) at − 20 ◦CA and the exhaust
+valve closes at the same time. Because early intake valve opening results
+in a decrease in the intake air, which drops from 427 kg/h with 10 ◦CA
+IVO to 391 kg/h with − 20 ◦CA IVO. The optimized EVC is also located at
+− 20 ◦CA since too early opening of the exhaust valve leads to the loss of
+the working capability while late exhaust valve timing affects the
+exhaust process. However, considering the high boost pressure of the
+hydrogen engine, the effects of the valve timing are relatively insignificant,
+with approximately 1.8% increase in the BTE after the
+
+optimization.
+
+The tested thermal efficiency is illustrated in Fig. 12, where the BTE
+of the hydrogen engine rises with the increase of power, keeping
+approximately 42% in the power section of 17 kW to 82 kW and dropping
+slightly to 35% at high power. The detailed statistics of the 120 kW
+hydrogen fuel cells come from the reports by Argonne National Laboratory
+[22] and Eberle et al. [23]. Only the energy loss by the air
+compressor is calculated here in the thermal efficiency of the hydrogen
+fuel cells, as it rises rapidly, reaching a peak efficiency of 64% at 20%
+loads and dropping to approximately 40% at full loads. The indicated
+thermal efficiency also neglect the mechanical loss of the hydrogen
+engine, and can improve by approximately 5% thermal efficiency. The
+results shows that the efficiency of hydrogen engine can reach the same
+level as the hydrogen fuel cell in high power regions.
+
+3.3. Achieving near-zero NOx emissions
+
+The methods of achieving original near-zero emissions (without any
+after-treatment) have been discussed in the previous investigation [24].
+In this section, the function of commercial NH3-SCR after-treatment
+equipment is used to further control the NOx emissions of the
+hydrogen engines. The injection pressure is adjusted to 14 MPa and the
+SOI is advanced to-180 ◦CA, providing sufficient time for mixing. The
+target for the NOx emissions after the SCR system is set below 20 ppm.
+As shown in Fig. 13(a), low engine speeds (1500 rpm) result in a significant
+reduction of NOx emissions from 3010 ppm to 4 ppm, with over
+Fig. 10. Maximum BMEP can be achieved under the limitation of the
+abnormal combustion.
+
+Fig. 11. Brake thermal efficiency and BMEP changes with excess
+air coefficient.
+
+Fig. 12. Effects of the valve timing on the brake thermal efficiency.
+
+L.-z. Bao et al.
+Fuel 324 (2022) 124713
+
+7
+
+99.5% conversion efficiency. Approximately 1400 ppm can be disposed
+by the after-treatment system with an engine speed of 2500 rpm, while it
+declines drastically to 236 ppm at the engine speed of 4000 rpm. The
+maximum BMEP also decreases with the declination of the reduced
+ability of SCR treatment at high engine speed. The change in conversion
+efficiency is depicted in Fig. 13(b), where it remains>96% before the
+engine speed of 3000 rpm and drops significantly to 90% at 4400 rpm.
+The decrease of the conversion efficiency is related to the rise in the
+space velocity which represents the amount of the NOx emissions
+flowing through the unit volume of catalyst per hour. According to the
+mass conservation, the mass flow rates of the exhaust is equal to the sum
+of the airflow rates and hydrogen flow rates, and the space velocity can
+be calculated as below.
+
+S = (mair + mH2 )
+ρexhaustVSCR
+
+(2)
+
+where S represents the space velocity, h− 1
+; mH2 represents the hydrogen
+flow rates; ρexhaust represents the density of the exhaust, kg/m3
+; and VSCR
+represents the volume of the SCR, m3
+. Although the concentration of
+NOx emissions before the SCR decreases at high engine speed, the highspace
+velocity of over 60,000 is far beyond the working region of the
+commercial after-treatment system.
+
+The overall working characteristics map and the performance of the
+
+in-cylinder NOx control and the after-treatment are depicted in detail in
+Fig. 14. The efficient area (BTE > 40%) covers approximately half of the
+working conditions, with the highly efficient area (BTE > 42%) clustered
+in the high load exceeding 14 bar BEMP at the engine speed of
+2500 rpm. The purple line represents the results of the in-cylinder NOx
+control, which occupied approximately half of the overall working map.
+The region of after-treatment NOx emissions below 20 ppm is extended
+notably when the engine speed changes from 1000 rpm to 2500 rpm,
+reaching the peak BTE of 42.1% @ 2000 rpm. In terms of the high-speed
+working conditions (exceeding 3000 rpm), only a limited increase in
+power is achieved due to the high-speed velocity. In general, a further
+step closer to the highest efficiency region (BTE > 42%) and larger
+power (BMEP > 14 bar) is achieved with near-zero emissions with the
+help of the NH3-SCR after-treatment system (see Fig. 15).
+
+4. Conclusion
+
+The present study is implemented on a 2.0L turbocharged direct
+injection and is conducted for the future power of the passenger car or
+light-duty vehicle. The target of this study is to achieve clean, efficient,
+and high-power combustion performance simultaneously. The significant
+conclusions are listed as follows.
+
+1. The effect of the turbocharger on the power performance is
+outstanding. Compared to the naturally aspirated hydrogen engine, a
+
+Fig. 13. Thermal efficiency of the hydrogen engine and fuel cells changes with
+the power.
+
+Fig. 14. NOx emissions and the BMEP changes with the engine speeds.
+
+Fig. 15. Working characteristic and NOx control performance of the
+hydrogen engine.
+
+L.-z. Bao et al.
+Fuel 324 (2022) 124713
+
+8
+
+peak power of 120 kW@4400 rpm and a maximum torque of 340
+N⋅m @2000 rpm can be achieved with the matched turbocharger,
+increased by 123% and 195%, respectively. However, a high airflow
+rate range is required for a hydrogen engine, which is one time larger
+than a gasoline engine, while the small diameter turbo leads to the
+deterioration of the gas exchange and the declination of the performance
+at high engine speeds.
+
+2. In DI hydrogen engine, pre-ignition tends to occur at early injection
+timing (SOI = -180 ◦CA) and high engine speeds (>3000 rpm),
+whereas knock tends to happen with late injection (later than SOI =
+-160 ◦CA) and medium engine speeds (1500 rpm ~ 2500 rpm).
+Appropriate retarded injection can suppress the pre-ignition and
+enhance the maximum power limited by the abnormal combustion.
+3. The highly efficient region (BTE exceeding 40%) overlaps the
+working area of BMEP > 8 bar. A maximum BTE of 42.6% can be
+obtained with a slightly lean λ of 1.91 @ 2000 rpm and 40.4% BTE
+with a λ of 2.47 @ 3000 rpm. Miller cycle by advanced intake and
+exhaust valve closing can achieve an approximately 1.8% increase in
+the BTE after the optimization.
+
+4. At low speeds (below 2000 rpm), the high conversion efficiency
+drops to 90% at 4400 rpm due to the high-speed velocity. The incylinder
+NOx control occupied approximately half of the overall
+working characteristic, while the use of the after-treatment extended
+the region to two-thirds of the whole map. The hydrogen can achieve
+large power (BMEP = 17 bar), high brake thermal efficiency (BTE =
+42.1%), and near-zero emissions (NOx 20 ppm) simultaneously with
+the use of the NH3-SCR after-treatment system.
+
+CRediT authorship contribution statement
+
+Ling-zhi Bao: Investigation, Data curation, Writing – original draft.
+Bai-gang Sun: Conceptualization. Qing-he Luo: Writing – review &
+editing. Jin-cheng Li: Supervision. Ding-chao Qian: Methodology. Heyang
+Ma: Data curation. Ying-jun Guo: Visualization.
+
+Declaration of Competing Interest
+
+The authors declare the following financial interests/personal relationships
+which may be considered as potential competing interests:
+This work is supported by the General Research and Development
+Institute of China First Auto Works Corporation Limited and the Beijing
+Institute of Technology Research Fund Program for Young Scholars (2
+2050205-XSQD-202103007).
+
+Acknowledgments
+
+This work is supported by the General Research and Development
+Institute of China First Auto Works Corporation Limited and the Beijing
+Institute of Technology Research Fund Program for Young Scholars (2
+2050205-XSQD-202103007) .
+
+References
+
+[1] Abe JO, Popoola API, Ajenifuja E, Popoola OM. Hydrogen energy, economy and
+storage: Review and recommendation. Int J Hydrogen Energy 2019;44:15072–86.
+https://doi.org/10.1016/j.ijhydene.2019.04.068.
+
+[2] Verhelst S, Wallner T. Hydrogen-fueled internal combustion engines. Prog Energy
+Combust Sci 2009;35:490–527. https://doi.org/10.1016/j.pecs.2009.08.001.
+[3] Dimitriou P, Tsujimura T. A review of hydrogen as a compression ignition engine
+fuel. Int J Hydrogen Energy 2017;42:24470–86. https://doi.org/10.1016/j.
+ijhydene.2017.07.232.
+
+[4] Verhelst S. Recent progress in the use of hydrogen as a fuel for internal combustion
+engines. Int J Hydrogen Energy 2014;39:1071–85. https://doi.org/10.1016/j.
+ijhydene.2013.10.102.
+
+[5] Xu P, Ji C, Wang S, Cong X, Ma Z, Tang C, et al. Effects of direct water injection on
+engine performance in engine fueled with hydrogen at varied excess air ratios and
+spark timing. Fuel 2020;269:117209. https://doi.org/10.1016/j.
+fuel.2020.117209.
+
+[6] Shinde BJ, Karunamurthy K. Recent progress in hydrogen fuelled internal
+combustion engine (H2ICE) – A comprehensive outlook. Mater Today Proc 2022;
+51:1568–79. https://doi.org/10.1016/j.matpr.2021.10.378.
+
+[7] Kiesgen G, Klüting M, Bock C, Fischer H. The new 12-cylinder hydrogen engine in
+the 7 series: The H2 ICE age has begun. SAE Tech Pap 2006. https://doi.org/
+10.4271/2006-01-0431.
+
+[8] Thomas Koch D, Sousa A, Bertram D. H2-Engine Operation with EGR Achieving
+High Power and High Efficiency Emission-Free Combustion. SAE Tech Pap Ser
+2019;1. https://doi.org/10.4271/2019-01-2178.
+
+[9] Lee J, Lee K, Lee J, Anh B. High power performance with zero NOx emission in a
+hydrogen-fueled spark ignition engine by valve timing and lean boosting. Fuel
+2014;128:381–9. https://doi.org/10.1016/j.fuel.2014.03.010.
+[10] Wallner T, Nande AM, Naber JD. Study of basic injection configurations using a
+direct-injection hydrogen research engine. SAE Tech Pap 2009;2:1221–30. https://
+doi.org/10.4271/2009-01-1418.
+
+[11] Wimmer A, Wallner T, Rigler J, Gerbig F. H2-Direct Injection – A Highly Promising
+Combustion Concept Reprinted From : SI Combustion and Direct Injection SI
+Engine Technology. SAE Tech Pap 2005;2005-01–01.
+
+[12] Verhelst S, Demuynck J, Sierens R, Scarcelli R, Matthias NS, Wallner T. Update on
+the Progress of Hydrogen-Fueled Internal Combustion Engines. 2013. https://doi.
+org/10.1016/B978-0-444-56352-1.00016-7.
+
+[13] Tsujimura T, Suzuki Y. Development of a large-sized direct injection hydrogen
+engine for a stationary power generator. Int J Hydrogen Energy 2019;44:
+11355–69. https://doi.org/10.1016/j.ijhydene.2018.09.178.
+[14] Oikawa M, Kojiya Y, Sato R, Goma K, Takagi Y, Mihara Y. Effect of supercharging
+on improving thermal efficiency and modifying combustion characteristics in leanburn
+direct-injection near-zero-emission hydrogen engines. Int J Hydrogen Energy
+2022;47:1319–27. https://doi.org/10.1016/j.ijhydene.2021.10.061.
+[15] Oikawa M, Takagi Y, Mihara Y, Kawahara N, Tomita E, Naitoh K. Attainment of
+High Thermal Efficiency and Near-zero Emissions by Optimizing Injected Spray
+Configuration in Direct Injection Hydrogen Engines. SAE Tech Pap 2019. https://
+doi.org/10.4271/2019-01-2306.
+
+[16] Klepatz K, Rottengruber H, Zeilinga S, Koch D, Prümm W. Loss Analysis of a DirectInjection
+Hydrogen Combustion Engine. SAE Tech Pap 2018 2018. https://doi.org/
+10.4271/2018-01-1686.
+
+[17] Yamane K. Hydrogen Fueled ICE, Successfully Overcoming Challenges through
+High Pressure Direct Injection Technologies: 40 Years of Japanese Hydrogen ICE
+Research and Development. SAE Tech Pap 2018 2018. https://doi.org/10.4271/
+2018-01-1145.
+
+[18] Kawamura A, Sato Y, Naganuma K, Yamane K, Takagi Y. Development project of a
+multi-cylinder DISI hydrogen ICE system for heavy duty vehicles. SAE Tech Pap
+2010. https://doi.org/10.4271/2010-01-2175.
+
+[19] A. Kufferath, E. Schünemann, Michael Krüger, et al. H2 ICE Powertrains for Future
+On-Road Mobility. 42nd International Vienna Motor Symposium 2021.
+[20] Luo Q-h, Hu J-B, Sun B-G, Liu F-S, Wang Xi, Li C, et al. Experimental investigation
+of combustion characteristics and NOx emission of a turbocharged hydrogen
+internal combustion engine. Int J Hydrogen Energy 2019;44(11):5573–84.
+[21] Wang Xi, Sun B-G, Luo Q-h, Bao L-Z, Su J-y, Liu J, et al. Visualization research on
+hydrogen jet characteristics of an outward-opening injector for direct injection
+hydrogen engines. Fuel 2020;280:118710.
+
+[22] Lohse-Busch H, Stutenberg K, Duoba M, Liu X, Elgowainy A, Wang M, et al.
+Technology Assessment of a Fuel Cell Vehicle: 2017 Toyota Mirai. US DOE -Energy
+Syst Div 2017;ANL/ESD-18.
+
+[23] Eberle U, Müller B, Von Helmolt R. Fuel cell electric vehicles and hydrogen
+infrastructure: status 2012. Energy Environ Sci 2012;5:8780–98. https://doi.org/
+10.1039/C2EE22596D.
+
+[24] Bao L-Z, Sun B-G, Luo Q-h. Experimental investigation of the achieving methods
+and the working characteristics of a near-zero NOx emission turbocharged directinjection
+hydrogen engine. Fuel 2022;319:123746.
+
+L.-z. Bao et al.

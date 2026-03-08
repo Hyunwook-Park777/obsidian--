@@ -1,0 +1,27 @@
+{
+  "name": "my-marketplace",
+  "version": "1.0.0",
+  "description": "Custom plugin marketplace for Claude Code",
+  "plugins": [
+    {
+      "name": "nature-methods-paper-skills",
+      "version": "1.0.0",
+      "description": "Paper writing skill set based on Hydrogen ICE / Dual-Fuel Engine research papers style analysis (14 papers, Hyunwook Park et al.)",
+      "path": "plugins/nature-methods-paper-skills",
+      "agents": [
+        "nature-methods-paper-orchestrator",
+        "nature-methods-title-writer",
+        "nature-methods-abstract-writer",
+        "nature-methods-introduction-writer",
+        "nature-methods-methodology-writer",
+        "nature-methods-results-writer",
+        "nature-methods-discussion-writer",
+        "nature-methods-caption-writer",
+        "nature-methods-verify"
+      ],
+      "skills": [
+        "nature-methods-style-guide"
+      ]
+    }
+  ]
+}
