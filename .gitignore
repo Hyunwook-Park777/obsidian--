@@ -1,0 +1,21 @@
+# PARA 폴더 무시
+Archives/
+Areas/
+Projects/
+Resources/
+Templates/
+
+# Obsidian
+.obsidian/
+.trash/
+
+# Claude Code
+.claude/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~
